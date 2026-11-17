@@ -1,0 +1,21 @@
+{
+  "name": "isy-plugins",
+  "owner": { "name": "DannyBaanks" },
+  "plugins": [
+    {
+      "name": "zig-lsp",
+      "description": "Zig language server (zls) for code intelligence: diagnostics, go-to-definition, references, hover",
+      "version": "0.1.0",
+      "author": { "name": "DannyBaanks" },
+      "source": "./plugins/zig-lsp",
+      "category": "development",
+      "strict": false,
+      "lspServers": {
+        "zls": {
+          "command": "zls",
+          "extensionToLanguage": { ".zig": "zig", ".zon": "zig" }
+        }
+      }
+    }
+  ]
+}
